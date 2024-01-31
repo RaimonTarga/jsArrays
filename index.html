@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Testing array</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head<>
+<body>
+    <header>
+        <h1>Testing arrays</h1>
+    </header>
+    <div class="grid-container" id="gridContainer">
+    </div>
+
+    <div class="ejercicio-container" id="ejercicioContainer">
+        <h2 class="titulo-item" id="titulo">Control panel</h2>
+        <div class="ejercicio-form" id="selectedForm" style="display: none;">
+            <p for="inputValue">
+                Selected element
+            </p>
+            <div class="input-form">
+                <input type="text" id="editValue" placeholder="Value">
+                <button onclick="editSelected()">Edit</button>
+            </div>
+            <button onclick="removeSelected()">Remove</button>
+            <button onclick="removeSelection()">Remove selection</button>
+        </div>
+        <div class="ejercicio-form" id="ejercicio-form">
+            <p for="inputValue">
+                Add element
+            </p>
+            <div class="input-form">
+                <input type="text" id="inputValue" placeholder="Value">
+                <button onclick="addElement()">Add</button>
+            </div>
+        </div>
+        <div class="ejercicio-form" id="populateForm">
+            <p for="inputValue">
+                Populate with random values
+            </p>
+            <button onclick="populate()">Populate</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./demo.js"></script>
+</html>
